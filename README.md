@@ -184,22 +184,6 @@ traverses 0–24 exactly by construction. The model adapter exists in
 everywhere, and never feeds triage. Reproduce with
 `scripts/verify_severity_model.py`.
 
-### 4. Fixes to the draft app
-
-- **Emergency banner appeared before anything was measured.** A failed or
-  silent recording now yields `None`, never `0.0`, and a `None` never grades or
-  escalates. Covered by tests.
-- **"Check-in complete" showed during an escalation.** The completion message is
-  now suppressed whenever any pathway is open. Covered by tests.
-- **Task 4 stimulus** was a stock photo of a dog, fetched over the network. It
-  is now original artwork generated locally by `scripts/make_stimulus.py`, with
-  multiple simultaneous actions, people of different ages, and one element
-  requiring inference. The established clinical cards (Cookie Theft, WAB Picnic)
-  are under copyright and cannot be shipped.
-- **Pause-ratio breach was routed to the respiratory pathway**, which would tell
-  a merely hesitant patient that their breathing sounds strained. It now routes
-  to clinical review with appropriate wording.
-
 ---
 
 ## Testing
