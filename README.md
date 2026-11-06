@@ -1,4 +1,4 @@
-# Auracare — guided voice screening prototype
+# Auracare: Guided Voice Screening Prototype
 
 A working Streamlit prototype that takes a patient through four voice tasks,
 records and analyses each one, administers the PHQ-8 conversationally, grades
