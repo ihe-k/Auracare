@@ -1,4 +1,4 @@
-
+"""
 Locating the project's own files and the sibling Cognitive_AI_Triage checkout.
 
 The model artifacts and the sample recordings live in the client's existing
