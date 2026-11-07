@@ -23,13 +23,6 @@ from typing import Dict, Optional
 import sys
 from pathlib import Path
 
-# Add root directory to python path
-ROOT_DIR = Path(__file__).resolve().parent
-if str(ROOT_DIR) not in sys.path:
-    sys.path.insert(0, str(ROOT_DIR))
-
-# Existing imports
-from auracare import paths, ui
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
